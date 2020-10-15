@@ -1,0 +1,158 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+%
+% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\voffset}{0.1in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\paperheight}{11in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\textheight}{11in}
+\setlength{\textheight}{9.5in}
+\setlength{\topmargin}{-0.25in}
+\setlength{\textwidth}{7in}
+\setlength{\topskip}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+%-----------------------------------------------------------
+%\usepackage{fullpage}
+\usepackage{shading}
+%\textheight=9.0in
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \parashade[.9]{sharpcorners}{\textbf{#1 \vphantom{p\^{E}}}}}\vspace{-6pt}}
+\newcommand{\ressubheading}[2]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+\end{tabular*}}
+\newcommand{\ressubitem}[2]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textit{#1} & \textit{#2} \\
+\end{tabular*}\vspace{-6pt}}
+\newcommand{\ressubheadingbig}[6]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+		\textit{#5} & \textit{#6} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+\begin{document}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\vspace{0.1in}
+\textbf{\Large Thomas Matthew Reay} \\
+13513 Ulysses S Grant St. & mreay@enthought.com \\
+Manor, TX 78653 & (281) 755-7281\\
+\end{tabular*}
+\\
+\begin{center}
+\line(1,0){500}
+\end{center}
+
+\vspace{-0.18in}
+
+\resheading{Work Experience}
+\vspace{-0.32in}
+\begin{itemize}
+\item 
+	\ressubheading{Enthought, Inc.}{Austin, TX}
+	\ressubitem{Scientific Software Developer}{March. 2018 - Present}
+	\vspace{-1pt}
+	\begin{itemize}
+	    \resitem{Developing quantitative and technical solutions for science and engineering service companies.}
+	    \resitem{Working with clients to plan project timelines and establish deliverables.}
+	    \resitem{Designing software APIs for modeling customer problem domains and providing solutions.}
+	    \resitem{Collaborated with clients to establish algorithm implementation and user workflow.}
+	    \resitem{Deploying and managing multiple distributed web services using tools such as Docker, Ansible, NGINX, etc.}
+	    \resitem{Designing and architecting desktop applications using Python and Qt.}
+	\end{itemize}
+	
+\item 
+	\ressubheading{Applied Research Laboratories: Space and Geophysics Lab}{Austin, TX}
+	\ressubitem{Research Engineering / Scientist Associate}{Sept. 2015 - March 2018}
+	\vspace{-1pt}
+	\begin{itemize}
+	    \resitem{Built software suite in Python for beam-forming / array signal processing.}
+		\resitem{Produced informative visualizations of various geo-spacial data for presentations.}
+    	\resitem{Assisted in setup and operation of field experiments and data collection in challenging environments.}
+		\resitem{Point of contact for testing and verification of software from partner labs.}
+	\end{itemize}
+	\vspace{-4pt}
+	\ressubitem{Student Technician}{Nov. 2014 - May 2015}
+	\vspace{-1pt}
+	\begin{itemize}
+    	\resitem{Analyzing ionospheric data from GNSS network.}
+		\resitem{Computational analysis with scientific Python suite.}
+	\end{itemize}
+
+\item
+	\ressubheading{University of Texas: Raizen Group}{Austin, TX}
+	\ressubitem{Research Engineering / Scientist Associate}{June 2015 - Aug. 2015}
+	\vspace{-1pt}
+	\begin{itemize}
+    	\resitem{Researched potential applications for graphene oxide structures.}
+	\end{itemize}
+	\vspace{-4pt}
+	\ressubitem{Research Assistant}{June 2014 - Oct. 2014}
+	\vspace{-1pt}
+	\begin{itemize}
+    	\resitem{Designed an atomic hydrogen source for use in an UHV environment.}
+		\resitem{Drafting parts in Solid Edge to be machined.}
+		\resitem{Machining experience with a mill and lathe.}
+	\end{itemize}
+
+\item
+	\ressubheading{University of Texas: Liberal Arts ITS}{Austin, TX}
+	\ressubitem{Desktop Support Assistant}{June 2012 - Aug. 2014}
+	\vspace{-1pt}
+	\begin{itemize}
+		\resitem{Problem solving various computer issues for faculty and staff.}
+		\resitem{Processed and distributed new computers on a yearly basis.}
+        \resitem{Trained new student employees.}
+	\end{itemize}
+\end{itemize}
+
+\vspace{-0.32in}
+
+\resheading{Education}
+\vspace{-0.32in}
+\begin{itemize}
+\item
+	\ressubheading{University of Texas}{Austin, TX}
+	\ressubitem{Computational Physics (GPA: 3.88; Hours: 137)}{Graduated with Honors Spring 2015}
+	\begin{itemize}
+		\resitem{Elements of Software Design, Elements of Databases, Intro to Computational Physics, Intro to Scientific Programming.}
+	\end{itemize}
+\end{itemize}
+
+\vspace{-0.32in}
+
+\resheading{Skills}
+\vspace{-0.32in}
+%\begin{description}
+\begin{itemize}
+\item
+    \ressubheading{Programing Languages:}{}
+    \ressubitem{Python, Javascript, SQL, Fortran, Java, C, HTML, \LaTeX, Mathematica, MatLab}{}
+    
+%\vspace{-0.1in}
+\end{itemize}
+%\end{description}
+
+
+\end{document}
